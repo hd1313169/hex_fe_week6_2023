@@ -304,11 +304,11 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       #C96464;//$yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #F3F1E5;//$gray-100 !default;
 $dark:          $gray-900 !default;
 $disable:       #9A9A9A;
 $hovering:      #9C9E18;
-
+$placeholder:   #878787;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -323,6 +323,7 @@ $theme-colors: (
   "dark":       $dark,
   "disable":    $disable,
   "hovering":   $hovering,
+  "placeholder":   $placeholder,
 
 ) !default;
 // scss-docs-end theme-colors-map
@@ -380,11 +381,21 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
+  4: $spacer * .25,
+  8: $spacer * .5,
+  12: $spacer * .75,
+  16: $spacer,
+  24: $spacer * 1.5,
+  32: $spacer * 2,
+  40: $spacer * 2.5,
+  48: $spacer * 3,
+  60: $spacer * 3.75,
+  64: $spacer * 4,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -413,7 +424,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         null; //underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        $hovering;//shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -425,7 +436,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0;//1rem !default;
 
 
 // Grid breakpoints
@@ -483,7 +494,7 @@ $container-padding-x: $grid-gutter-width !default;
 // Define common padding and border radius sizes and more.
 
 // scss-docs-start border-variables
-$border-width:                1px !default;
+$border-width:                2px;//1px !default;
 $border-widths: (
   1: 1px,
   2: 2px,
@@ -546,7 +557,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Noto Sans TC', 'Noto Serif TC', 'Yeseva One', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Yeseva One', 'Noto Serif TC', 'Noto Sans TC', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -582,17 +593,28 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
+  8: 0.5rem,
+  12: 0.75rem,
+  14: 0.875rem,
+  16: 1rem,
+  18: 1.125rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  32: 2rem,
+  48: 3rem,
+  60: 3.75rem,
+  64: 4rem,
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0;//$spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
@@ -1066,8 +1088,8 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-color:                    $primary !default;//var(--#{$prefix}link-color) ;
+$nav-link-hover-color:              $hovering !default;//var(--#{$prefix}link-hover-color) ;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1088,7 +1110,7 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  $spacer * 1.5;//$spacer * .5 !default;
 $navbar-padding-x:                  null !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
@@ -1107,8 +1129,8 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-color:                $primary;//rgba($black, .55) !default;
+$navbar-light-hover-color:          $hovering;//rgba($black, .7) !default;
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;

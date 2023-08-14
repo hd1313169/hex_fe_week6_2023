@@ -1,11 +1,16 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-
+@import './utils/_utilities.scss';
+@import './utils/_mixin.scss';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
-
-@import './pages/index.scss';
+@import './pages/_index.scss';
+@import './pages/_cart.scss';
+@import './pages/_event-info.scss';
+@import './pages/_event-list.scss';
+@import './pages/_login.scss';
+@import './pages/_payment.scss';
+@import './pages/_thankpage.scss';
 
 @import "../../node_modules/bootstrap";
