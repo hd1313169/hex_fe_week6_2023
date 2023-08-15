@@ -18,50 +18,85 @@
 
 <body>
   <%- include('./layout/header'); -%>
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide mt-16 mt-md-32" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-img px-40 px-sm-48 pt-16 pt-sm-40 pb-24">
-              <div class="row">
-                <div class="col-6 col-md-4">
-                  <h3 class="text-white fw-bold">19 MAY 2023</h3>
+    <div class="bg-light">
+      <div class="container">
+        <!-- 輪播banner -->
+        <div id="carouselExampleControls" class="carousel slide pt-16 pt-md-32" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-img px-40 px-sm-48 pt-16 pt-sm-40 pb-24">
+                <div class="row">
+                  <div class="col-6 col-md-4">
+                    <h3 class="text-white">19 MAY 2023</h3>
+                  </div>
+                </div>
+                <div class="row justify-content-center carousel-content text-white text-center">
+                  <div class="col-12 col-sm-8">
+                    <h4 class="mb-0 mb-sm-16 fw-bold">隔牆有耳-沒有草東的派對</h4>
+                    <p>你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                      帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+                  </div>
                 </div>
               </div>
-              <div class="row justify-content-center carousel-content text-white text-center">
-                <div class="col-12 col-sm-8">
-                  <h4 class="mb-0 mb-sm-16">隔牆有耳-沒有草東的派對</h4>
-                  <p>你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
-                    帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img px-40 px-sm-48 pt-16 pt-sm-40 pb-24">
+                <div class="row">
+                  <div class="col-6 col-md-4">
+                    <h3 class="text-white">25 NOV 2024</h3>
+                  </div>
+                </div>
+                <div class="row justify-content-center carousel-content text-white text-center">
+                  <div class="col-12 col-sm-8">
+                    <h4 class="mb-0 mb-sm-16 fw-bold">隔牆沒耳-有草東的派對</h4>
+                    <p>你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                      帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- 輪播banner end-->
+
+        <!-- 活動分類 -->
+        <div class="py-48">
+          <div class="row flex-wrap">
+            <div class="col-md-2">
+              <div
+                class="cate-item px-58 py-35 d-flex flex-column align-items-center border border-primary border-2 position-relative mb-8 mb-sm-24">
+                <img class="cate-img mb-8 mb-sm-12"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg"
+                  alt="演出">
+                <a href="#" class="text-center fs-24 fw-bold text-center stretched-link">演出</a>
+              </div>
+            </div>
+            
+
+          </div>
+
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="row">
-        <div class="col-2"></div>
+        <!-- 活動分類 end-->
+
       </div>
     </div>
-
     <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       打開 modal
-    </button>
-
+    </button> -->
     <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -75,7 +110,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <%- include('./layout/footer'); -%>
 

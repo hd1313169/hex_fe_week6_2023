@@ -2,7 +2,7 @@
     &-img {
         width: 100%;
         height: 518px;
-        background-color: #000;
+        background-image: url(https://github.com/hd1313169/hex_fe_week6_2023/blob/main/assets/images/banner.png?raw=true);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -39,5 +39,23 @@
                 display: none;
             }
         }
+    }
+}
+
+.cate{
+    &-item{
+        width: 100%;
+        height: 196px;
+
+        &:hover{
+            background-color: $secondary;
+            a{
+                color: $primary;
+            }
+        }
+    }
+    &-img{
+        width: 80px;
+        height: 80px;
     }
 }

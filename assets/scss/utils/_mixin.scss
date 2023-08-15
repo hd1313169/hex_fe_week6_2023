@@ -1,3 +1,17 @@
-@mixin link_hover{
-    color: $hovering !important;
-}
+@mixin laptop{
+    @media(max-width: 992px){
+      @content;
+    }
+  }
+
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+  }
+  
+  @mixin mobile{
+    @media(max-width: 568px){
+      @content;
+    }
+  }
