@@ -1,0 +1,16 @@
+.login {
+    height: calc(100vh - 114px - 90px);
+
+    &-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 768px){
+    .login{
+        height: calc(100vh - 80px - 74px);
+
+    }
+
+}

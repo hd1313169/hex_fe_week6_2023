@@ -1,3 +1,9 @@
 .ff-content{
     font-family: 'Noto Sans TC';
 }
+
+.btn-primary{
+    &:hover{
+        color: $secondary !important;
+    }
+}
