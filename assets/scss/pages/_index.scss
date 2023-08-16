@@ -120,18 +120,6 @@
 
     }
 
-    &-title {
-        @include pad {
-            h3 {
-                font-size: 24px !important;
-            }
-
-            h4 {
-                font-size: 16px !important;
-            }
-        }
-    }
-
     &-btn {
         img {
             width: 24px;
@@ -141,6 +129,25 @@
                 width: 20px;
                 height: 20px;
             }
+        }
+    }
+}
+
+.online{
+    &-img{
+        width: 100%;
+        height: auto;
+        background-image: url();
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-title{
+        font-size: 32px
+        ;
+        @include pad{
+            font-size: 18px !important;
         }
     }
 }
