@@ -1,15 +1,21 @@
-*{
+* {
 
-    a{
+    a {
         text-decoration: none !important;
     }
 }
-.ff-content{
+
+.ff-title {
+    font-family: 'Noto Serif TC';
+
+}
+
+.ff-content {
     font-family: 'Noto Sans TC';
 }
 
-.btn-primary{
-    &:hover{
+.btn-primary {
+    &:hover {
         color: $secondary !important;
     }
 }
@@ -24,4 +30,47 @@
             font-size: 16px !important;
         }
     }
+}
+
+.event-tag {
+    padding: 4px 24px;
+    margin-right: 8px;
+    font-weight: bold;
+    border: 1px solid $primary;
+    border-left: 4px solid $primary;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $primary;
+        border-left: 4px solid $secondary;
+        color: $white !important;
+
+    }
+
+    @include pad {
+        padding: 4px 16px;
+    }
+}
+
+.ticker {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3.2px;
+    color: $secondary !important;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @include pad {
+        font-size: 16px;
+    }
+}
+
+.rotate-2{
+    transform: rotate(2deg);
+}
+.rotate--2{
+    transform: rotate(-2deg);
 }
