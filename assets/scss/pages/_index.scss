@@ -189,3 +189,44 @@
         }
     }
 }
+
+.follow {
+    &-item {
+        width: 50%;
+
+        &:first-child {
+            margin-right: -2px;
+        }
+
+        @include pad {
+            width: 100%;
+
+            &:first-child {
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+        }
+
+
+    }
+
+    &-title {
+        padding: 16px 32px;
+        border-bottom: 2px solid $primary;
+        font-style: 32px;
+        font-family: 'Noto Serif TC';
+        font-weight: bold;
+
+        @include pad {
+            padding: 16px 24px;
+        }
+    }
+
+    &-body {
+        padding: 32px;
+
+        @include pad {
+            padding: 16px 12px;
+        }
+    }
+}
