@@ -1,0 +1,93 @@
+.event {
+    &-tag {
+        display: block;
+        padding: 4px 24px;
+        margin-right: 8px;
+        font-weight: bold;
+        border: 1px solid $primary;
+        border-left: 4px solid $primary;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $primary;
+            border-left: 4px solid $secondary;
+
+            a {
+                color: $white !important;
+            }
+        }
+
+        @include pad {
+            padding: 4px 16px;
+        }
+    }
+
+    &-item {
+        margin-bottom: 48px !important;
+
+        img {
+            height: 255px;
+            object-fit: cover;
+        }
+
+        @include desktop {
+
+            h5 {
+                font-size: 40px !important;
+            }
+        }
+
+        @include pad {
+            margin-bottom: 24px !important;
+
+            h5 {
+                font-size: 32px !important;
+            }
+
+            h6 {
+                font-size: 18px !important;
+            }
+
+            img {
+                height: 210px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    &-btn {
+        img {
+            width: 24px;
+            height: 24px;
+
+            @include pad {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.page {
+    &-item{
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+
+        // .active{
+        //     background-color: $primary !important;
+        //     color: $white !important;
+        // }
+    }
+    &-link {
+        width: 40px;
+        height: 40px;
+        font-family: 'Noto Serif TC';
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -191,8 +191,11 @@
 }
 
 .follow {
+    
     &-item {
         width: 50%;
+        height: 100%;
+        display: table-cell !important;
 
         &:first-child {
             margin-right: -2px;
@@ -229,4 +232,16 @@
             padding: 16px 12px;
         }
     }
+}
+
+.cta{
+    @include pad {
+        h3{
+            font-size: 18px !important;
+        }
+        p{
+            font-size: 14px !important;
+        }
+    }
+
 }

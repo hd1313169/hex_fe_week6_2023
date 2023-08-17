@@ -4,7 +4,7 @@
         text-decoration: none !important;
     }
 
-    li{
+    li {
         list-style: none;
     }
 }
@@ -25,7 +25,11 @@
 }
 
 .display-title {
+    border: 3px solid $primary ;
+
     @include pad {
+        border: 2px solid $primary;
+
         h3 {
             font-size: 24px !important;
         }
@@ -36,28 +40,7 @@
     }
 }
 
-.event-tag {
-    padding: 4px 24px;
-    margin-right: 8px;
-    font-weight: bold;
-    border: 1px solid $primary;
-    border-left: 4px solid $primary;
 
-    &:last-child {
-        margin-right: 0;
-    }
-
-    &:hover {
-        background-color: $primary;
-        border-left: 4px solid $secondary;
-        color: $white !important;
-
-    }
-
-    @include pad {
-        padding: 4px 16px;
-    }
-}
 
 .ticker {
     font-size: 32px;
@@ -72,9 +55,10 @@
     }
 }
 
-.rotate-2{
+.rotate-2 {
     transform: rotate(2deg);
 }
-.rotate--2{
+
+.rotate--2 {
     transform: rotate(-2deg);
 }
