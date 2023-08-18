@@ -19,11 +19,11 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
-    <div class="bg-light">
+  <div class="bg-light">
+    <%- include('./layout/header'); -%>
       <div class="container">
         <!-- 輪播banner -->
-        <div id="carouselExampleControls" class="carousel slide pt-16 pt-md-32" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-img px-40 px-sm-48 pt-16 pt-sm-40 pb-24">
@@ -391,10 +391,10 @@
         </div>
       </div>
       <!-- cta end-->
-    </div>
-    <%- include('./layout/footer'); -%>
+      <%- include('./layout/footer'); -%>
+  </div>
 
-      <script type="module" src="../main.js"></script>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>

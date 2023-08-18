@@ -13,16 +13,38 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
+  <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
 
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
-    <%- include('./layout/footer'); -%>
+  <div class="bg-light">
+    <%- include('./layout/header'); -%>
+      <div class="container">
+        <div class="info">
+          <div class="row">
+            <div class="col-12 col-lg-10">
+              <div class="border-rwd p-12 p-md-24">
+                <img class="w-100"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true"
+                  alt="event">
+              </div>
+            </div>
+            <div class="col-12 col-lg-2">
+              <h2 class="border-rwd py-24 py-md-32 me-8 me-md-0 mb-md-24">2023</h2>
+              <div class="border-rwd py-12 py-md-48">
+                <h2 class="mb-md-8">MAY</h2>
+                <h2 class="">19</h2>
 
-      <script type="module" src="../main.js"></script>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
+  </div>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>
