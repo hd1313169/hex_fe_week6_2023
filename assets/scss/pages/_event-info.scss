@@ -1,12 +1,76 @@
-.info{
-    h2{
+.info {
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
         font-size: 48px;
         text-align: center;
     }
 
-    @include pad{
-        h2{
+    h4 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    &-time {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    &-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include laptop {
+
+        h2 {
+            width: calc((100% - 8px) / 3);
+        }
+
+        &-time {
+            flex-direction: row;
+        }
+
+        &-date {
+            width: calc((100% - 8px) / 3 * 2);
+            flex-direction: row;
+        }
+
+
+    }
+
+    @include pad {
+        h2 {
             font-size: 24px;
         }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+    }
+}
+
+.slash {
+    width: 2px;
+    height: 100px;
+    background-color: $primary;
+    transform: rotate(30deg);
+
+    @include pad {
+        height: 50px;
     }
 }
