@@ -18,13 +18,19 @@
     font-family: 'Noto Sans TC';
 }
 
-.border-rwd{
-    border: 3px solid $primary;
-
-    @include pad{
-        border: 2px solid $primary;
-    }
+.border-lg {
+    @include border-lg;
 }
+.border-bottom-lg{
+    @include border-lg;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+.border-md {
+    @include border-md;
+}
+
 .btn-primary {
     &:hover {
         color: $secondary !important;
@@ -32,11 +38,12 @@
 }
 
 .display-title {
-    border: 3px solid $primary ;
+    @include border-lg;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 
     @include pad {
-        border: 2px solid $primary;
-
         h3 {
             font-size: 24px !important;
         }
@@ -68,4 +75,22 @@
 
 .rotate--2 {
     transform: rotate(-2deg);
+}
+
+.btn-secondary {
+    @include border-md;
+    background-color: $light !important;
+    color: $primary !important;
+
+    &:hover {
+        background-color: $primary !important;
+        color: $secondary !important;
+    }
+
+}
+
+.btn-short {
+    @include pad {
+        display: none;
+    }
 }
