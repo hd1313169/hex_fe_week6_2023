@@ -13,16 +13,42 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
+  <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
 
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
-    <%- include('./layout/footer'); -%>
+  <div class="bg-light">
+    <%- include('./layout/header'); -%>
+      <div class="pt-24 pb-48 py-md-60">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+              <ul class="progress-list p-0">
+                <!-- 步驟一 -->
+                <li class="progress-item">
+                  <h6 class="progress-number progress-number-active mb-4 mb-md-8">1</h6>
+                  <h5 class="progress-step text-center fw-bold">訂單確認</h5>
+                </li>
+                <!-- 步驟二 -->
+                <li class="progress-item">
+                  <h6 class="progress-number mb-4 mb-md-8">2</h6>
+                  <h5 class="progress-step text-center fw-bold">結帳付款</h5>
+                </li>
+                <!-- 步驟三 -->
+                <li class="progress-item">
+                  <h6 class="progress-number mb-4 mb-md-8">3</h6>
+                  <h5 class="progress-step text-center fw-bold">訂購結果</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      <script type="module" src="../main.js"></script>
+      </div>
+      <%- include('./layout/footer'); -%>
+  </div>
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>

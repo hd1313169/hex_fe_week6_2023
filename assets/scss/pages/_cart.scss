@@ -1,0 +1,58 @@
+.progress{
+
+    &-list{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:before{
+            position: absolute;
+            content: "";
+            width: 80%;
+            height: 1px;
+            background-color: $dark;
+            left: 50%;
+            top: 24px;
+            transform: translate(-50%, -50%);
+            @include pad{
+                top: 16px;
+ 
+            }
+        }
+    }
+
+    &-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    &-number{
+        background-color: $light;
+        border: 1px solid $primary;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Noto Serif TC';
+        font-weight: bold;
+
+        &-active{
+            background-color: $primary !important;
+            color: $secondary !important;
+        }
+    }
+    
+    @include pad{
+        &-number{
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+        }   
+    }
+}
