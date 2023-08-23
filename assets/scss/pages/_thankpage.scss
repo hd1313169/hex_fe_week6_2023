@@ -1,0 +1,10 @@
+.thank{
+
+    &-title{
+        font-style: 32px;
+
+        @include pad{
+            font-style: 24px;
+        }
+    }
+}
