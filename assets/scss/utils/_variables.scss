@@ -309,6 +309,8 @@ $dark:          $gray-900 !default;
 $disable:       #9A9A9A;
 $hovering:      #9C9E18;
 $placeholder:   #878787;
+$gray:   #4F4F4F;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -324,6 +326,7 @@ $theme-colors: (
   "disable":    $disable,
   "hovering":   $hovering,
   "placeholder":   $placeholder,
+  "gray":   $gray,
 
 ) !default;
 // scss-docs-end theme-colors-map

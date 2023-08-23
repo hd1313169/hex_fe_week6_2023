@@ -21,12 +21,14 @@
 .border-lg {
     @include border-lg;
 }
-.border-bottom-lg{
+
+.border-bottom-lg {
     @include border-lg;
     border-top: 0 !important;
     border-right: 0 !important;
     border-left: 0 !important;
 }
+
 .border-md {
     @include border-md;
 }
@@ -55,19 +57,25 @@
 }
 
 
-
-.ticker {
+.swiper-slide {
+    width: auto;
+    font-family: 'Noto Serif TC';
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 3.2px;
     color: $secondary !important;
-    overflow: hidden;
-    white-space: nowrap;
+    // overflow: hidden;
+    // white-space: nowrap;
 
     @include pad {
         font-size: 16px;
     }
 }
+
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
 
 .rotate-2 {
     transform: rotate(2deg);
