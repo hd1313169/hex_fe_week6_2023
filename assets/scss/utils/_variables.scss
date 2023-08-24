@@ -345,7 +345,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false; //true !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -431,7 +431,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         null; //underline !default;
+$link-decoration:                         none; //underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        $hovering;//shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;

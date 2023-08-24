@@ -44,7 +44,7 @@
 .cate {
     &-item {
         width: 100%;
-        // padding: 25% 0;
+        padding: 12.5% 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,6 +70,7 @@
 
     &-more {
         width: 100%;
+        padding: 12.5% 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,6 +81,7 @@
             font-size: 48px;
             color: $secondary !important;
         }
+
         &:hover {
             background-color: $secondary !important;
 
@@ -101,8 +103,8 @@
             }
         }
 
-        &-more{
-            a{
+        &-more {
+            a {
                 font-size: 24px;
             }
         }
