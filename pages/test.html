@@ -20,13 +20,16 @@
 </head>
 
 <body>
-    <nav class="w-100 position-fixed d-flex justify-content-between align-items-center px-40 py-36">
-        <a href="#"><img src="../assets/images/harmonize.png" alt="logo" style="max-height: 80px;"></a>
-        <button class="btn fs-24 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    <nav class="w-100 position-fixed d-flex justify-content-between align-items-center bg-white px-16 px-md-40 py-24 py-md-36">
+        <a href="#"><img src="../assets/images/harmonize.png" alt="logo" class="logo"></a>
+        <button class="d-none d-md-block btn fs-24 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
             MENU
         </button>
-
+        <button class="d-md-none btn fs-24 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <i class="fa-solid fa-grip-lines"></i>
+        </button>
         <div class="offcanvas offcanvas-end justify-content-between pt-40 pb-24 px-40" tabindex="-1"
             id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="d-flex justify-content-end">
@@ -49,60 +52,53 @@
         </div>
         </div>
     </nav>
-    <div class="mb-md-120">
+    <div class="mb-64 mb-md-120 pt-160">
         <div class="row g-0">
             <div class="col-md-3">
                 <div class="h-100 d-flex justify-content-center align-items-center hasLine">
-                    <h1 class="text-center">PROJECT</h1>
+                    <h1 class="text-center mb-64 mb-md-0">PROJECT</h1>
                 </div>
             </div>
             <div class="col-md-9">
-                <img src="../assets/images/header.png" class="w-100" alt="header">
+                <img src="../assets/images/header.png" class="w-100 projectList-img" alt="header">
             </div>
         </div>
     </div>
 
-    <div class="mb-md-180">
+    <div class="mb-120 mb-md-180 px-36 px-md-0">
         <div class="row g-0">
             <div class="col-md-9 offset-md-3">
                 <ul class="m-0 p-0">
-                    <li class="d-flex align-items-center mb-80">
-                        <img src="../assets/images/img01.png" class="w-66" alt="img">
-                        <div class="w-33 d-flex justify-content-center align-items-center">
-                            <div>
+                    <li class="projectList-item d-flex flex-column flex-md-row align-items-center mb-80">
+                        <img src="../assets/images/img01.png" class="d-block projectList-item-img mb-12 mb-mb-0" alt="img">
+                        <div class="projectList-item-body d-flex justify-content-md-center">
+                            <div class="projectList-item-content">
                                 <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
-                                <div class="d-flex align-items-center mb-40">
+                                <div class="d-flex align-items-center mb-8 mb-md-40">
                                     <i class="fa-solid fa-cube me-4"></i>
                                     <p>住宅空間</p>
                                 </div>
-                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
+                                <div class="d-flex justify-content-end justify-content-md-start">
+                                    <a href="#" class="button-primary border border-dark text-center px-32 py-16">learn more</a>
+                                </div>
                             </div>
+
                         </div>
                     </li>
-                    <li class="d-flex align-items-center mb-80">
-                        <img src="../assets/images/img01.png" class="w-66" alt="img">
-                        <div class="w-33 d-flex justify-content-center align-items-center">
-                            <div>
+                    <li class="projectList-item d-flex flex-column flex-md-row align-items-center mb-80">
+                        <img src="../assets/images/img01.png" class="d-block projectList-item-img mb-12 mb-mb-0" alt="img">
+                        <div class="projectList-item-body d-flex justify-content-md-center">
+                            <div class="projectList-item-content">
                                 <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
-                                <div class="d-flex align-items-center mb-40">
+                                <div class="d-flex align-items-center mb-8 mb-md-40">
                                     <i class="fa-solid fa-cube me-4"></i>
                                     <p>住宅空間</p>
                                 </div>
-                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <img src="../assets/images/img01.png" class="w-66" alt="img">
-                        <div class="w-33 d-flex justify-content-center align-items-center">
-                            <div>
-                                <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
-                                <div class="d-flex align-items-center mb-40">
-                                    <i class="fa-solid fa-cube me-4"></i>
-                                    <p>住宅空間</p>
+                                <div class="d-flex justify-content-end justify-content-md-start">
+                                    <a href="#" class="button-primary border border-dark text-center px-32 py-16">learn more</a>
                                 </div>
-                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
                             </div>
+
                         </div>
                     </li>
                 </ul>
@@ -112,11 +108,11 @@
     </div>
 
     <div class="w-100 bg-cta">
-        <div class="bg-cta-dark ms-auto py-120 d-flex justify-content-center align-items-center">
+        <div class="bg-cta-dark ms-auto pt-80 pb-48 py-md-120 d-flex justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-end text-white">
                 <div>
-                    <h2 class="mb-16">CONTACT US</h2>
-                    <p class="mb-24">了解如何用設計為你的生活開拓嶄新視野
+                    <h2 class="mb-40 mb-md-16">CONTACT US</h2>
+                    <p class="mb-40 mb-md-24">了解如何用設計為你的生活開拓嶄新視野
                         <br>歡迎與我們聯繫。
                     </p>
                 </div>
@@ -126,12 +122,12 @@
     </div>
 
 
-    <div class="px-120 py-104">
-        <div class="d-flex justify-content-between">
+    <div class="px-36 px-md-120 py-64 py-md-104">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
 
-            <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-between mb-60 mb-md-0">
                 <div>
-                    <p class="fs-32 mb-40">HARMONIZE DESIGN</p>
+                    <p class="fs-32 mb-20 mb-md-40">HARMONIZE DESIGN</p>
                     <ul class="d-flex m-0 p-0">
                         <li class="button-social d-flex justify-content-center align-items-center border border-dark rounded-circle me-12"
                         style="width: 40px;height: 40px;"><a href="#" class="stretched-link"><i class="fa-brands fa-instagram"></i></a>
@@ -141,12 +137,12 @@
                         </li>
                     </ul>
                 </div>
-                <p class="fw-light text-gray">© HARMONIZE DESIGN 2023. All Rights Reserved. Web Design By créer.</p>
+                <p class="d-none d-md-block fw-light text-gray">© HARMONIZE DESIGN 2023. All Rights Reserved. Web Design By créer.</p>
             </div>
 
-            <div class="d-flex">
-                <div class="me-120">
-                    <p class="fs-20 fw-bold mb-24">聯絡我們</p>
+            <div class="d-flex flex-column flex-md-row mb-40 mb-md-0">
+                <div class="mb-40 mb-md-0 me-md-120">
+                    <p class="fs-20 fw-bold mb-16 mb-md-24">聯絡我們</p>
                     <ul class="m-0 p-0">
                         <li class="mb-12">寬堂空間設計</li>
                         <li class="mb-12">T: <a href="tel:+886 2-2739-3216" class="ms-12">+886 2-2739-3216</a></li>
@@ -155,15 +151,15 @@
                     </ul>
                 </div>
                 <div>
-                    <p class="fs-20 fw-bold mb-24">政策條款</p>
+                    <p class="fs-20 fw-bold mb-16 mb-md-24">政策條款</p>
                     <ul class="m-0 p-0">
-                        <li class="mb-12">寬堂空間設計</li>
                         <li class="mb-12"><a href="#">隱私權政策</a></li>
                         <li class="mb-12"><a href="#">法顧資訊</a></li>
                         <li><a href="#">Cookies 政策</a></li>
                     </ul>
                 </div>
             </div>
+            <p class="d-md-none fw-light text-gray">© HARMONIZE DESIGN 2023. All Rights Reserved. Web Design By créer.</p>
 
 
         </div>

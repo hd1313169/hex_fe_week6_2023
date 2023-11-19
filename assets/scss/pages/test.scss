@@ -6,19 +6,69 @@
         'opsz' 24
 }
 
+nav {
+    z-index: 4000;
+}
+
+.logo {
+    height: 52px;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+    }
+}
+
 .hasLine {
     position: relative;
 
-    &:after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: 600px;
-        background-color: $dark;
-        bottom: -600px;
-        right: -1px;
-        transform: rotate(60deg);
-        transform-origin: top right;
+    @media screen and (min-width: 768px) {
+        &:after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 600px;
+            background-color: $dark;
+            bottom: -600px;
+            right: -1px;
+            transform: rotate(60deg);
+            transform-origin: top right;
+        }
+    }
+}
+
+.projectList {
+    &-img {
+        min-height: 400px;
+        object-fit: cover;
+    }
+
+    &-item {
+        &-img {
+            width: 100%;
+            min-height: 354px;
+            object-fit: cover;
+            border-radius: 16px;
+
+            @media screen and (min-width: 768px) {
+                width: 66%;
+            }
+        }
+
+        &-body {
+            width: 100%;
+
+            @media screen and (min-width: 768px) {
+                width: 33%;
+            }
+        }
+
+        &-content {
+            width: 100%;
+
+            @media screen and (min-width: 768px) {
+                width: auto;
+            }
+        }
     }
 }
 
@@ -63,37 +113,46 @@
     }
 }
 
-.bg-cta{
+.bg-cta {
     background-image: url(../assets/images/cta-bg.png);
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 
-    &-dark{
-        width: 51%;
-        background-color: rgba($color: #000000, $alpha: .25);
+    @media screen and (min-width: 768px) {
+        background-position: center;
+    }
+
+    &-dark {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: 51%;
+            background-color: rgba($color: #000000, $alpha: .25);
+        }
     }
 }
 
-.button-primary{
-    &:hover{
+.button-primary {
+    &:hover {
         background-color: $dark !important;
         color: $white !important;
     }
 
-    &-light{
-        &:hover{
+    &-light {
+        &:hover {
             background-color: $white !important;
             color: $dark !important;
         }
     }
 }
 
-.button-social{
+.button-social {
     position: relative;
-    &:hover{
+
+    &:hover {
         background-color: $dark !important;
-        a{
+
+        a {
             color: $white !important;
         }
     }
