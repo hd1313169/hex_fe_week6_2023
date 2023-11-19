@@ -74,3 +74,27 @@
         background-color: rgba($color: #000000, $alpha: .25);
     }
 }
+
+.button-primary{
+    &:hover{
+        background-color: $dark !important;
+        color: $white !important;
+    }
+
+    &-light{
+        &:hover{
+            background-color: $white !important;
+            color: $dark !important;
+        }
+    }
+}
+
+.button-social{
+    position: relative;
+    &:hover{
+        background-color: $dark !important;
+        a{
+            color: $white !important;
+        }
+    }
+}
