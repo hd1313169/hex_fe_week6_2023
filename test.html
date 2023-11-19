@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO 活動訂票網</title>
+    <link rel="shortcut icon" href="data:image/x-icon;base64,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" />
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/hex_fe_week6_2023/assets/main-49433430.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week6_2023/assets/main-016fabf1.css">
+</head>
+
+<body>
+    <nav class="w-100 position-fixed d-flex justify-content-between align-items-center px-40 py-36">
+        <a href="#"><img src="data:image/png;base64,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" alt="logo" style="max-height: 80px;"></a>
+        <button class="btn fs-24 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            MENU
+        </button>
+
+        <div class="offcanvas offcanvas-end justify-content-between pt-40 pb-24 px-40" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close text-reset fs-12" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="ps-24">
+                <ul class="d-flex flex-column justify-content-between m-0 p-0">
+                    <li class="menu-item mb-40"><a class="menu-link fs-24" href="#">ABOUT US</a></li>
+                    <li class="menu-item mb-40"><a class="menu-link fs-24" href="#">PROJECT</a></li>
+                    <li class="menu-item mb-40"><a class="menu-link fs-24" href="#">SERVE</a></li>
+                    <li class="menu-item mb-40"><a class="menu-link fs-24" href="#">MEDIA REPORT</a></li>
+                    <li class="menu-item mb-40"><a class="menu-link fs-24" href="#">BLOG</a></li>
+                    <li class="menu-item"><a class="menu-link fs-24" href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="border-top border-dark pt-16">
+                <p>HARM<span class="fw-bold text-hovering">O</span>NIZE DESIGN</p>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="mb-md-120">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <div class="h-100 d-flex justify-content-center align-items-center hasLine">
+                    <h1 class="text-center">PROJECT</h1>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <img src="/hex_fe_week6_2023/assets/header-f4d4cc80.png" class="w-100" alt="header">
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-md-180">
+        <div class="row g-0">
+            <div class="col-md-9 offset-md-3">
+                <ul class="m-0 p-0">
+                    <li class="d-flex align-items-center mb-80">
+                        <img src="/hex_fe_week6_2023/assets/img01-d06f7533.png" class="w-66" alt="img">
+                        <div class="w-33 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
+                                <div class="d-flex align-items-center mb-40">
+                                    <i class="fa-solid fa-cube me-4"></i>
+                                    <p>住宅空間</p>
+                                </div>
+                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center mb-80">
+                        <img src="/hex_fe_week6_2023/assets/img01-d06f7533.png" class="w-66" alt="img">
+                        <div class="w-33 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
+                                <div class="d-flex align-items-center mb-40">
+                                    <i class="fa-solid fa-cube me-4"></i>
+                                    <p>住宅空間</p>
+                                </div>
+                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <img src="/hex_fe_week6_2023/assets/img01-d06f7533.png" class="w-66" alt="img">
+                        <div class="w-33 d-flex justify-content-center align-items-center">
+                            <div>
+                                <h2 class="fs-24 mb-8">共居 x 共鳴‧竹北</h2>
+                                <div class="d-flex align-items-center mb-40">
+                                    <i class="fa-solid fa-cube me-4"></i>
+                                    <p>住宅空間</p>
+                                </div>
+                                <a href="#" class="button-primary border border-dark px-32 py-16">learn more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="w-100 bg-cta">
+        <div class="bg-cta-dark ms-auto py-120 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-end text-white">
+                <div>
+                    <h2 class="mb-16">CONTACT US</h2>
+                    <p class="mb-24">了解如何用設計為你的生活開拓嶄新視野
+                        <br>歡迎與我們聯繫。
+                    </p>
+                </div>
+                <a href="#" class="button-primary-light ms-auto border border-white text-white px-32 py-16">learn more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="px-120 py-104">
+        <div class="d-flex justify-content-between">
+
+            <div class="d-flex flex-column justify-content-between">
+                <div>
+                    <p class="fs-32 mb-40">HARMONIZE DESIGN</p>
+                    <ul class="d-flex m-0 p-0">
+                        <li class="button-social d-flex justify-content-center align-items-center border border-dark rounded-circle me-12"
+                        style="width: 40px;height: 40px;"><a href="#" class="stretched-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                        <li class="button-social d-flex justify-content-center align-items-center border border-dark rounded-circle"
+                            style="width: 40px;height: 40px;"><a href="#" class="stretched-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="fw-light text-gray">© HARMONIZE DESIGN 2023. All Rights Reserved. Web Design By créer.</p>
+            </div>
+
+            <div class="d-flex">
+                <div class="me-120">
+                    <p class="fs-20 fw-bold mb-24">聯絡我們</p>
+                    <ul class="m-0 p-0">
+                        <li class="mb-12">寬堂空間設計</li>
+                        <li class="mb-12">T: <a href="tel:+886 2-2739-3216" class="ms-12">+886 2-2739-3216</a></li>
+                        <li class="mb-12">F: <a href="tel:+886 2-2739-3219" class="ms-12">+886 2-2739-3219</a></li>
+                        <li>M: <a href="mailto:hd@harmonizedesign.com" class="ms-12">hd@harmonizedesign.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fs-20 fw-bold mb-24">政策條款</p>
+                    <ul class="m-0 p-0">
+                        <li class="mb-12">寬堂空間設計</li>
+                        <li class="mb-12"><a href="#">隱私權政策</a></li>
+                        <li class="mb-12"><a href="#">法顧資訊</a></li>
+                        <li><a href="#">Cookies 政策</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
