@@ -36,6 +36,11 @@ nav {
     }
 }
 
+.bg-test-header{
+    object-fit: cover !important;
+    height: 210px;
+}
+
 .projectList {
     &-img {
         min-height: 400px;
